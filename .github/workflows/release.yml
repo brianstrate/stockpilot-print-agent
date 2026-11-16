@@ -1,0 +1,56 @@
+name: Build & Release Windows Installer
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-installer:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Extract version from tag
+        id: version
+        shell: pwsh
+        run: |
+          $tag = "${{ github.ref_name }}"
+          if ($tag -match '^v(.+)$') {
+            $ver = $Matches[1]
+          } else {
+            $ver = "1.0.0"
+          }
+          echo "APP_VERSION=$ver" >> $env:GITHUB_OUTPUT
+
+      - name: Publish self-contained win-x64
+        run: |
+          dotnet publish StockPilotPrintAgent.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=false -o publish/win-x64
+
+      - name: Build Inno Setup Installer
+        shell: pwsh
+        run: |
+          $iscc = "C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
+          if (-Not (Test-Path $iscc)) {
+            choco install innosetup -y
+          }
+          & $iscc "/DMyAppVersion=${{ steps.version.outputs.APP_VERSION }}" installer.iss
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: Output/StockPilotPrintAgent-Setup-v*.exe
+          generate_release_notes: true
