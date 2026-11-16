@@ -1,0 +1,6 @@
+C:\Mine_kode_projecter\stockpilot-print-agent\StockPilotPrintService\obj\Release\net10.0-windows\StockPilotPrintService.csproj.AssemblyReference.cache
+C:\Mine_kode_projecter\stockpilot-print-agent\StockPilotPrintService\obj\Release\net10.0-windows\StockPilotPrintService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mine_kode_projecter\stockpilot-print-agent\StockPilotPrintService\obj\Release\net10.0-windows\StockPilotPrintService.AssemblyInfoInputs.cache
+C:\Mine_kode_projecter\stockpilot-print-agent\StockPilotPrintService\obj\Release\net10.0-windows\StockPilotPrintService.AssemblyInfo.cs
+C:\Mine_kode_projecter\stockpilot-print-agent\StockPilotPrintService\obj\Release\net10.0-windows\StockPilotPrintService.csproj.CoreCompileInputs.cache
+C:\Mine_kode_projecter\stockpilot-print-agent\StockPilotPrintService\obj\Release\net10.0-windows\StockPilotPrintService.sourcelink.json
