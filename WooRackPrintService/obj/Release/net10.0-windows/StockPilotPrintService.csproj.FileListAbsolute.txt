@@ -1,0 +1,6 @@
+C:\Mine_kode_projecter\woorack-print-agent\WooRackPrintService\obj\Release\net10.0-windows\WooRackPrintService.csproj.AssemblyReference.cache
+C:\Mine_kode_projecter\woorack-print-agent\WooRackPrintService\obj\Release\net10.0-windows\WooRackPrintService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mine_kode_projecter\woorack-print-agent\WooRackPrintService\obj\Release\net10.0-windows\WooRackPrintService.AssemblyInfoInputs.cache
+C:\Mine_kode_projecter\woorack-print-agent\WooRackPrintService\obj\Release\net10.0-windows\WooRackPrintService.AssemblyInfo.cs
+C:\Mine_kode_projecter\woorack-print-agent\WooRackPrintService\obj\Release\net10.0-windows\WooRackPrintService.csproj.CoreCompileInputs.cache
+C:\Mine_kode_projecter\woorack-print-agent\WooRackPrintService\obj\Release\net10.0-windows\WooRackPrintService.sourcelink.json

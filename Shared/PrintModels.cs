@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace StockPilotPrintAgent.Shared;
+namespace WooRackPrintAgent.Shared;
 
 public class AgentConfig
 {

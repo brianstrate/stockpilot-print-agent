@@ -1,7 +1,7 @@
 using System.IO;
 using System.Text.Json;
 
-namespace StockPilotPrintAgent.Shared;
+namespace WooRackPrintAgent.Shared;
 
 public class ServiceStatusSnapshot
 {

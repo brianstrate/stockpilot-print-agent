@@ -1,13 +1,13 @@
 using System.IO;
 using System.Text.Json;
 
-namespace StockPilotPrintAgent.Shared;
+namespace WooRackPrintAgent.Shared;
 
 public static class SharedConfigService
 {
     public static readonly string BaseDir = Path.Combine(
         Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
-        "StockPilotPrintAgent");
+        "WooRackPrintAgent");
 
     public static readonly string ConfigPath = Path.Combine(BaseDir, "config.json");
 

@@ -38,7 +38,7 @@ jobs:
 
       - name: Publish self-contained win-x64
         run: |
-          dotnet publish StockPilotPrintAgent.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=false -o publish/win-x64
+          dotnet publish WooRackPrintAgent.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=false -o publish/win-x64
 
       - name: Build Inno Setup Installer
         shell: pwsh
@@ -52,5 +52,5 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: Output/StockPilotPrintAgent-Setup-v*.exe
+          files: Output/WooRackPrintAgent-Setup-v*.exe
           generate_release_notes: true

@@ -7,14 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {},
     ".NETCoreApp,Version=v10.0/win-x64": {
-      "StockPilotPrintService/1.0.0": {
+      "WooRackPrintService/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Hosting.WindowsServices": "10.0.0",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "10.0.13",
           "runtimepack.Microsoft.WindowsDesktop.App.Runtime.win-x64": "10.0.13"
         },
         "runtime": {
-          "StockPilotPrintService.dll": {}
+          "WooRackPrintService.dll": {}
         }
       },
       "runtimepack.Microsoft.NETCore.App.Runtime.win-x64/10.0.13": {
@@ -1251,7 +1251,7 @@
     }
   },
   "libraries": {
-    "StockPilotPrintService/1.0.0": {
+    "WooRackPrintService/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
